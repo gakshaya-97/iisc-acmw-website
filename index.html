@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IISc ACM-W Student Chapter</title>
+  <style>
+    :root{--bg:#071026;--card:#071727;--accent:#06b6d4;--accent2:#7c3aed}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#071026 0%,#071727 60%)}
+    header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(7,17,38,0.6), rgba(7,17,38,0.4));border-bottom:1px solid rgba(255,255,255,0.02)}
+    .container{max-width:1100px;margin:0 auto;padding:22px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#111827,var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+    nav{display:flex;gap:18px;margin-left:auto}
+    a.nav{color:#cfe8ff;text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600;transition:transform .22s ease, background .22s}
+    a.nav:hover{transform:translateY(-4px);background:rgba(255,255,255,0.02)}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;padding:48px 0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(4px)}
+    h1{margin:0 0 8px 0;font-size:28px;letter-spacing:-0.4px}
+    p.lead{color:#bcd9ff;margin:0 0 10px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .roadmap{margin-top:18px}
+    .events-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .event-card{display:flex;align-items:flex-start;gap:12px;padding:14px;border-radius:10px;transition:transform .18s ease, box-shadow .18s ease;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.03)}
+    .event-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.55)}
+    .date{min-width:120px;font-weight:700;color:var(--accent)}
+    .muted{color:#9fb9df}
+    .foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;color:#9fb9df;font-size:13px}
+    .bg-blobs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+    .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:0.14;mix-blend-mode:screen;animation:float 12s ease-in-out infinite}
+    .b1{width:420px;height:420px;left:-100px;top:-80px;background:linear-gradient(90deg,var(--accent2),var(--accent))}
+    .b2{width:320px;height:320px;right:-60px;bottom:-80px;background:linear-gradient(90deg,#f97316,#ef4444);animation-duration:18s}
+    @keyframes float{0%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(30px) rotate(12deg)}100%{transform:translateY(0) rotate(0deg)}}
+    a.event-link{color:inherit;text-decoration:none}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:1fr}.events-grid{grid-template-columns:1fr}.container{padding:14px}}
+    .small{font-size:13px;color:#b7d8f8}
+  </style>
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden>
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+  </div>
+
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div> <img src="C:\Users\aksha\OneDrive - Indian Institute of Science\ACM-W\acm_transparent.png" alt="ACM-W Logo" class="logo"></div>
+        
+
+        <div>
+          <div style="font-weight:800;color:#ffffff">IISc ACM-W Student Chapter</div>
+          <div class="muted" style="font-size:12px">A student initiative by IISc UG students</div>
+        </div>
+      </div>
+      <nav>
+        <a class="nav" href="#events">Events</a>
+        <a class="nav" href="#team">Team</a>
+        <a class="nav" href="#join">Join Us</a>
+        <a class="nav" href="https://iisc.acm.org/">ACM</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Welcome — IISc ACM-W Student Chapter</h1>
+        <p class="lead">The IISc ACM-W Student Chapter brings together students across disciplines to celebrate, learn, and collaborate — with special focus on women in computing.</p>
+
+        <div class="grid">
+          <div class="card" style="background:transparent;padding:12px">
+            <h3 style="margin:0 0 8px 0">About Us</h3>
+            <p class="muted" style="margin:0">A student-led chapter working to bridge research and practice through talks, workshops and community events.</p>
+          </div>
+
+          <div class="card" style="background:transparent;padding:12px">
+            <h3 style="margin:0 0 8px 0">Get Involved</h3>
+            <p class="muted" style="margin:0">Open roles across outreach, events & technical teams — reach out to iiscacmw@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="card" id="join">
+        <h3 style="margin:0 0 8px 0">Join ACM-W</h3>
+        <p class="muted" style="margin:0 0 12px 0">Become a member or apply for open positions to contribute and learn.</p>
+        <a href="#contact" style="display:inline-block;margin-top:12px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#021124;text-decoration:none;font-weight:700">Apply Now</a>
+      </aside>
+    </section>
+
+    <section class="card roadmap" id="events">
+      <h2 style="margin:0 0 12px 0">Events — Talks, Workshops & More</h2>
+      <div class="events-grid">
+        <!-- 1 -->
+        <a class="event-link" href="events/inaugural.html">
+          <div class="event-card">
+            <div class="date">13 Mar 2023</div>
+            <div>
+              <div style="font-weight:700">IISc ACM-W Student Chapter — Inaugural & Essay Competition</div>
+              <div class="small">Essay: Write about a woman in computing. Deadline: 13 Mar 2023. Inauguration: 14 Mar 2023.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2 -->
+        <a class="event-link" href="events/logo_competition.html">
+          <div class="event-card">
+            <div class="date">TBD</div>
+            <div>
+              <div style="font-weight:700">Logo Competition — Design the ACM-W logo</div>
+              <div class="small">Design a logo that defines the chapter. First Prize: ₹1,000.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3 -->
+        <a class="event-link" href="events/paradox_festival.html">
+          <div class="event-card">
+            <div class="date">14 May 2023</div>
+            <div>
+              <div style="font-weight:700">Paradox Festival</div>
+              <div class="small">A day for logic & mathematics. UG students present interesting paradoxes. 10:30 AM, CSA-254.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4 -->
+        <a class="event-link" href="events/alan-turing.html">
+          <div class="event-card">
+            <div class="date">23 Jun 2023</div>
+            <div>
+              <div style="font-weight:700">Celebrating Alan Turing — 111th Birth Anniversary</div>
+              <div class="small">A series of talks on Turing's contributions. Recordings on the chapter's YouTube playlist.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5 -->
+        <a class="event-link" href="events/hands_on_python.html">
+          <div class="event-card">
+            <div class="date">Summer 2023</div>
+            <div>
+              <div style="font-weight:700">Hands-on Python: Summer 2023</div>
+              <div class="small">Series of inquiry-based learning sessions to build basic programming skills.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6 -->
+        <a class="event-link" href="events/orientation.html">
+          <div class="event-card">
+            <div class="date">19 Aug 2023</div>
+            <div>
+              <div style="font-weight:700">Orientation for Freshers 2023</div>
+              <div class="small">Orientation with puzzle competition, IISc trivia & networking. 11:00 AM, Room 254 (CSA).</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 7 -->
+        <a class="event-link" href="events/reinforcement_learning.html">
+          <div class="event-card">
+            <div class="date">16 Sep 2023</div>
+            <div>
+              <div style="font-weight:700">Algorithms & Neural Networks in Reinforcement Learning</div>
+              <div class="small">Talk by Atharv Suryawanshi. 11:00 AM, G21 OPB.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 8 -->
+        <a class="event-link" href="events/twos_complement.html">
+          <div class="event-card">
+            <div class="date">11 Nov 2023</div>
+            <div>
+              <div style="font-weight:700">Two's Complement — Pair Programming Competition</div>
+              <div class="small">Team of two, 3 hours, prize pool ₹10,000+. 2:00 PM, Room 102 (CDS).</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 9 -->
+        <a class="event-link" href="events/robotics_ml.html">
+          <div class="event-card">
+            <div class="date">23 Mar (Saturday)</div>
+            <div>
+              <div style="font-weight:700">Robotics & Machine Learning: JAX & MuJoCo Tutorial</div>
+              <div class="small">Introductory hands-on session. 3:00 PM, Seminar Hall RBCCPS.</div>
+            </div>
+          </div>
+        </a>
+        <!-- 10 -->
+        <a class="event-link" href="events/algorithm_festival.html">
+          <div class="event-card">
+            <div class="date">20 Oct 2024</div>
+            <div>
+              <div style="font-weight:700">Algorithms Festival- Unveiling the beauty of Algorithms</div>
+              <div class="small">9:15am, Seminar Hall 104, CSA</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 11 -->
+        <a class="event-link" href="events/unveiling_future.html">
+          <div class="event-card">
+            <div class="date">25 Oct 2024</div>
+            <div>
+              <div style="font-weight:700">Unveiling the Future — Mathematics of Learning, Decision-Making & Causality</div>
+              <div class="small">Talk by Nirjhar Das. 9:00 PM onwards, G01 Old Physics Building.</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 12 -->
+        <a class="event-link" href="events/crytography.html">
+          <div class="event-card">
+            <div class="date">09 Nov 2024</div>
+            <div>
+              <div style="font-weight:700">Securing the Future: A Journey into Cryptography</div>
+              <div class="small">Intro to cryptography by Arunachalaeshwaran V R. 3:00 PM, Room 117 (CSA).</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 13 -->
+        <a class="event-link" href="events/ml_systems.html">
+          <div class="event-card">
+            <div class="date">13–15 Jun 2025</div>
+            <div>
+              <div style="font-weight:700">Workshop on Systems for Machine Learning (3-day)</div>
+              <div class="small">Keynotes, tutorials, hands-on projects. Venue: IISc Bengaluru.</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="foot">
+        <div>Contact: iiscacmw@gmail.com</div>
+        <div class="muted">© 2025 IISc ACM-W Student Chapter</div>
+      </div>
+    </section>
+
+    <section class="card" id="team" style="margin-top:18px">
+      <h2 style="margin:0 0 12px 0">Team</h2>
+      <p class="muted" style="margin:0 0 12px 0"></p>
+    </section>
+
+  </main>
+
+</body>
+</html>
